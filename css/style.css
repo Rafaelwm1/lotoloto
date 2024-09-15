@@ -1,0 +1,211 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, DarkOrchid 0%, white 100%);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #4B0082;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #7CFC00 4px solid;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+    background: #4B0082;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button, .cta-button-large {
+    display: block;
+    background: #7CFC00;
+    color: #333;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.6em;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 320px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-button:hover, .cta-button-large:hover {
+    background: #66FF00;
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.benefits {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h3 {
+    color: #4B0082;
+    font-family: 'Poppins', sans-serif;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.benefits li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #7CFC00;
+}
+
+.testimonial {
+    background: #f8f8f8;
+    border-left: 5px solid #4B0082;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    position: relative;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.2em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.price-section {
+    background-color: #4B0082;
+    color: white;
+    padding: 24px;
+    text-align: center;
+    margin: 32px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.price-section .price {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #7CFC00;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.price-section p {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .price-section .price {
+        font-size: 2em;
+    }
+
+    .cta-button-large {
+        font-size: 1.4em;
+        padding: 12px 20px;
+    }
+
+    .cta-button {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    .price-section .price {
+        font-size: 1.8em;
+    }
+
+    .cta-button-large {
+        font-size: 1.2em;
+        padding: 10px 18px;
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+    }
+}
